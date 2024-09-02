@@ -1,0 +1,27 @@
+$primaryLight: #f2f3f5;
+$primaryDark: #1b1c1c;
+
+$gradient-1-1: #1a272e;
+$gradient-1-2: #7392a4;
+$gradient-2-1: #11151b;
+$gradient-2-2: #303335;
+
+@function linear-gradient($start-color, $end-color) {
+	@return linear-gradient(to top, $start-color, $end-color);
+}
+
+$themes: (
+	light: (),
+	dark: (
+		primary-text: $primaryDark,
+		black: #11151b,
+		dark: #1c2329,
+		jet: #2e2f2f,
+		metal: #31373c,
+		gray: #444a4e,
+		lightgray: #acbdba,
+		azure: #cddddd,
+		gradient-light: linear-gradient($gradient-1-1, $gradient-1-2),
+		gradient-dark: linear-gradient($gradient-2-1, $gradient-2-2),
+	),
+);
