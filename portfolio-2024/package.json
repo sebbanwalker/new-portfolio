@@ -13,9 +13,11 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"framer-motion": "^11.3.31",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"react-player": "^2.16.0",
+		"react-router-dom": "^6.26.1",
 		"react-video-player": "^1.0.0",
 		"sass": "^1.77.8",
 		"workspaces": "^0.1.0"
