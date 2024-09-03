@@ -1,15 +1,14 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { LandingPage } from "@sebban/landingpage";
 import { BiographyPage } from "@sebban/biographypage";
 import { ProjectsPage } from "@sebban/projectspage";
 import { ContactPage } from "@sebban/contactpage";
+import { Header } from "@sebban/header";
 
-type Props = {};
-
-export const AppRouter = (props: Props) => {
+export const AppRouter = () => {
 	return (
 		<Router>
+			<Header />
 			<Routes>
 				<Route path="/" element={<LandingPage />} />
 				<Route path="/biography" element={<BiographyPage />} />

@@ -1,7 +1,9 @@
-import React from "react";
+import "./style.scss";
 
-type Props = {};
-
-export const LandingPage = (props: Props) => {
-	return <div>index</div>;
+export const LandingPage = () => {
+	return (
+		<section className="landing">
+			<p>test</p>
+		</section>
+	);
 };
