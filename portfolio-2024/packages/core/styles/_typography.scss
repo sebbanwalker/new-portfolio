@@ -1,0 +1,26 @@
+@use "theme" as *;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$baseFontSize: 16px;
+
+@mixin fontSizeSmall {
+	font-family: "Roboto", sans-serif;
+	font-size: $baseFontSize * 1.25;
+}
+
+@mixin fontSizeNormal {
+	font-family: "Roboto", sans-serif;
+	font-size: $baseFontSize * 1.5;
+}
+
+@mixin fontSizeLarge {
+	font-family: "Roboto", sans-serif;
+	font-size: $baseFontSize * 2;
+}
+
+@mixin fontHeader {
+	font-family: "Roboto", sans-serif;
+	font-size: $baseFontSize * 2;
+	font-weight: 600;
+	color: $azure;
+}
