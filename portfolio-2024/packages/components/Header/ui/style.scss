@@ -13,6 +13,8 @@
 	background: none;
 	font-size: 30px;
 	padding: 0px;
+	border: none;
+	cursor: pointer;
 }
 
 .header__button {
@@ -27,6 +29,15 @@
 @media (max-width: 720px) {
 	.header__nav {
 		display: none;
+		flex-direction: column;
+		gap: 10px;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		background-color: rgba(255, 255, 255, 0.9);
+		width: 100%;
+		padding: 10px;
+		z-index: 1001;
 
 		&--open {
 			display: flex;
@@ -35,6 +46,10 @@
 		.header__button {
 			display: block;
 			padding: 10px;
+		}
+
+		.header__hamburger {
+			display: block; // Show hamburger menu on small screens
 		}
 	}
 }
