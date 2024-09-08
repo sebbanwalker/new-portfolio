@@ -14,17 +14,29 @@ export const Header = () => {
 			<button className="header__hamburger" onClick={toggleMenu}>
 				☰
 			</button>
-			<nav className={`header__nav ${isMenuOpen ? "--open" : ""}`}>
-				<Link to="/" className="header__button">
+			<nav className={`header__nav${isMenuOpen ? "--open" : ""}`}>
+				<Link
+					to="/"
+					className="header__button"
+					onClick={() => setIsMenuOpen(false)}>
 					Home
 				</Link>
-				<Link to="/biography" className="header__button">
+				<Link
+					to="/biography"
+					className="header__button"
+					onClick={() => setIsMenuOpen(false)}>
 					Biography
 				</Link>
-				<Link to="/projects" className="header__button">
+				<Link
+					to="/projects"
+					className="header__button"
+					onClick={() => setIsMenuOpen(false)}>
 					Projects
 				</Link>
-				<Link to="/contact" className="header__button">
+				<Link
+					to="/contact"
+					className="header__button"
+					onClick={() => setIsMenuOpen(false)}>
 					Contact
 				</Link>
 			</nav>

@@ -7,12 +7,20 @@
 	gap: 2%;
 	justify-content: flex-end;
 	padding-top: 2vh;
+	position: absolute;
 }
 
 .header__hamburger {
+	display: none;
 	background: none;
 	font-size: 30px;
-	padding: 0px;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+
+	@media (max-width: 720px) {
+		display: block;
+	}
 }
 
 .header__button {
@@ -22,19 +30,23 @@
 .header__nav {
 	display: flex;
 	gap: 20px;
-}
 
-@media (max-width: 720px) {
-	.header__nav {
+	@media (max-width: 720px) {
 		display: none;
+	}
 
-		&--open {
+	&--open {
+		@media (max-width: 720px) {
 			display: flex;
-		}
-
-		.header__button {
-			display: block;
+			flex-direction: column;
+			gap: 10px;
+			position: absolute;
+			top: 60px;
+			right: 0;
+			background-color: rgba(255, 255, 255, 0.9);
+			width: 100%;
 			padding: 10px;
+			z-index: 1001;
 		}
 	}
 }
