@@ -10,6 +10,8 @@ export const LandingPage = () => {
 				</section>
 				<section className="landing__portrait"></section>
 			</section>
+			<section className="landing__main-stack"></section>
+			<section className="landing__other-tech"></section>
 		</section>
 	);
 };
