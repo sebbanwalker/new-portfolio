@@ -8,6 +8,7 @@ export const LandingPage = () => {
 					<h1 className="landing__title--sebastian">Sebastian</h1>
 					<h1 className="landing__title--walker">Walker</h1>
 				</section>
+				<section className="landing__portrait"></section>
 			</section>
 		</section>
 	);
