@@ -1,3 +1,5 @@
+import "./style.scss";
+
 export const Banner = () => {
 	return (
 		<section className="landing__banner">
