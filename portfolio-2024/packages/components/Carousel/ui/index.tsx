@@ -1,8 +1,6 @@
 import React from "react";
 import "./style.scss";
 
-type Props = {};
-
-export const Carousel = (props: Props) => {
+export const Carousel = () => {
 	return <div>index</div>;
 };
