@@ -28,7 +28,7 @@ $baseFontSizeDynamic: 1vw;
 
 @mixin fontFirstName {
 	font-family: "Roboto Flex", sans-serif;
-	font-size: $baseFontSizeDynamic * 3;
+	font-size: $baseFontSizeDynamic * 4;
 	font-weight: 400;
 	background-image: linear-gradient(
 		to right,
@@ -43,7 +43,7 @@ $baseFontSizeDynamic: 1vw;
 
 @mixin fontLastName {
 	font-family: "Roboto Flex", sans-serif;
-	font-size: $baseFontSizeDynamic * 3;
+	font-size: $baseFontSizeDynamic * 4;
 	font-weight: 500;
 	background-image: linear-gradient(to right, #51758f 0.65%, #35414a 42.11%);
 	color: transparent;
