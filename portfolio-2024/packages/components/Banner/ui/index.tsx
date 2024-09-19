@@ -9,7 +9,7 @@ export const Banner = () => {
 				<h1 className="banner__title--walker">Walker</h1>
 			</section>
 			<section className="banner__portrait">
-				<img src={portrait}></img>
+				<img src={portrait} className="banner__portrait--photo"></img>
 			</section>
 		</section>
 	);
