@@ -6,8 +6,8 @@ export const LandingPage = () => {
 	return (
 		<section className="landing">
 			<Banner />
-			<Carousel />
-			<Carousel />
+			<Carousel title="Main Stack" items={[]} />
+			<Carousel title="Other Tech" items={[]} />
 		</section>
 	);
 };

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 $baseFontSize: 16px;
+$baseFontSizeDynamic: 1vw;
 
 @mixin fontSizeSmall {
 	font-family: "Roboto", sans-serif;
@@ -23,4 +24,30 @@ $baseFontSize: 16px;
 	font-size: $baseFontSize * 2;
 	font-weight: 600;
 	color: $azure;
+}
+
+@mixin fontFirstName {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: $baseFontSizeDynamic * 4;
+	font-weight: 400;
+	background-image: linear-gradient(
+		to right,
+		#cddddd 0%,
+		#708c8c 28%,
+		#6e7777 61%
+	);
+	color: transparent;
+	background-clip: text;
+	filter: drop-shadow(2px 2px 4px #000000ab);
+}
+
+@mixin fontLastName {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: $baseFontSizeDynamic * 4;
+	font-weight: 500;
+	background-image: linear-gradient(to right, #51758f 0.65%, #35414a 42.11%);
+	color: transparent;
+	background-clip: text;
+
+	filter: drop-shadow(2px 2px 4px #000000ab);
 }
