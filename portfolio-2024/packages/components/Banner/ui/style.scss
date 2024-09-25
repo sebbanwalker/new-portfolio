@@ -21,7 +21,12 @@ $gradient-dark: custom-linear-gradient($gradient-2-1, $gradient-2-2);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 2%;
+
+	&--container {
+		display: flex;
+		gap: 2%;
+		justify-content: center;
+	}
 
 	&--sebastian {
 		@include fontFirstName;
