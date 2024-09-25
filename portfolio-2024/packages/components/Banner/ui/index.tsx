@@ -1,12 +1,36 @@
 import "./style.scss";
 import portrait from "/portrait.png";
+import github from "/github.svg";
+import linkedin from "/linkedin.svg";
+import leetcode from "/leetcode.svg";
+import { Tooltip } from "@sebban/tooltip";
 
 export const Banner = () => {
 	return (
 		<section className="banner">
 			<section className="banner__title">
-				<h1 className="banner__title--sebastian">SEBASTIAN</h1>
-				<h1 className="banner__title--walker">WALKER</h1>
+				<div className="banner__title--container">
+					<h1 className="banner__title--sebastian">SEBASTIAN</h1>
+					<h1 className="banner__title--walker">WALKER</h1>
+				</div>
+				<p>Impassioned Frontend Developer based in Stockholm, Sweden.</p>
+				<section className="banner__links">
+					<Tooltip text="GitHub Profile">
+						<a href="https://github.com/sebbanwalker">
+							<img src={github} className="banner__link--image"></img>
+						</a>
+					</Tooltip>
+					<Tooltip text="LinkedIn Profile">
+						<a href="https://linkedin.com/in/sebbanwalker">
+							<img src={linkedin} className="banner__link--image"></img>
+						</a>
+					</Tooltip>
+					<Tooltip text="LeetCode Profile">
+						<a href="https://leetcode.com/sebbanwalker">
+							<img src={leetcode} className="banner__link--image"></img>
+						</a>
+					</Tooltip>
+				</section>
 			</section>
 			<section className="banner__portrait">
 				<img src={portrait} className="banner__portrait--photo"></img>
