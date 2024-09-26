@@ -38,6 +38,10 @@ $gradient-dark: custom-linear-gradient($gradient-2-1, $gradient-2-2);
 	}
 }
 
+.banner__text {
+	@include fontBannerText;
+}
+
 .banner__portrait {
 	flex: 1;
 	object-fit: cover;
