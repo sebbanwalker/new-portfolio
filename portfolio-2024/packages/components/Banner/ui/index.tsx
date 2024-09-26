@@ -13,7 +13,9 @@ export const Banner = () => {
 					<h1 className="banner__title--sebastian">SEBASTIAN</h1>
 					<h1 className="banner__title--walker">WALKER</h1>
 				</div>
-				<p>Impassioned Frontend Developer based in Stockholm, Sweden.</p>
+				<p className="banner__text">
+					Impassioned Frontend Developer based in Stockholm, Sweden.
+				</p>
 				<section className="banner__links">
 					<Tooltip text="GitHub Profile">
 						<a href="https://github.com/sebbanwalker">
