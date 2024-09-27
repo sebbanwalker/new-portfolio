@@ -17,21 +17,27 @@ export const Banner = () => {
 					Impassioned Frontend Developer based in Stockholm, Sweden.
 				</p>
 				<section className="banner__links">
-					<Tooltip text="GitHub Profile">
-						<a href="https://github.com/sebbanwalker">
-							<img src={github} className="banner__link--image"></img>
-						</a>
-					</Tooltip>
-					<Tooltip text="LinkedIn Profile">
-						<a href="https://linkedin.com/in/sebbanwalker">
-							<img src={linkedin} className="banner__link--image"></img>
-						</a>
-					</Tooltip>
-					<Tooltip text="LeetCode Profile">
-						<a href="https://leetcode.com/sebbanwalker">
-							<img src={leetcode} className="banner__link--image"></img>
-						</a>
-					</Tooltip>
+					<section className="banner__links--item">
+						<Tooltip text="GitHub Profile">
+							<a href="https://github.com/sebbanwalker">
+								<img src={github} className="banner__links--image"></img>
+							</a>
+						</Tooltip>
+					</section>
+					<section className="banner__links--item">
+						<Tooltip text="LinkedIn Profile">
+							<a href="https://linkedin.com/in/sebbanwalker">
+								<img src={linkedin} className="banner__links--image"></img>
+							</a>
+						</Tooltip>
+					</section>
+					<section className="banner__links--item">
+						<Tooltip text="LeetCode Profile">
+							<a href="https://leetcode.com/sebbanwalker">
+								<img src={leetcode} className="banner__links--image"></img>
+							</a>
+						</Tooltip>
+					</section>
 				</section>
 			</section>
 			<section className="banner__portrait">

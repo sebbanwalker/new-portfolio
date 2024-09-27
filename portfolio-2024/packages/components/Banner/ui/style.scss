@@ -42,6 +42,26 @@ $gradient-dark: custom-linear-gradient($gradient-2-1, $gradient-2-2);
 	@include fontBannerText;
 }
 
+.banner__links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: auto;
+
+	&--item {
+		width: 5vw;
+		height: 5vw;
+	}
+
+	&--image {
+		display: flex;
+		place-items: center;
+		height: 50px;
+		width: auto;
+		object-fit: contain;
+	}
+}
+
 .banner__portrait {
 	flex: 1;
 	object-fit: cover;
