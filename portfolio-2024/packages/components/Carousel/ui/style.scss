@@ -1,0 +1,11 @@
+@use "@sebban/styles" as *;
+
+.carousel {
+	@include fontCarousel;
+}
+
+.carousel__title {
+}
+
+.carousel__items {
+}
