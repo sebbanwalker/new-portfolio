@@ -65,3 +65,10 @@ $baseFontSizeDynamic: 1vw;
 	font-weight: 500;
 	color: $azure;
 }
+
+@mixin fontCarousel {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: $baseFontSizeDynamic * 1;
+	font-weight: 500;
+	color: $azure;
+}
