@@ -18,17 +18,6 @@ $gradient-dark: custom-linear-gradient($gradient-2-1, $gradient-2-2);
 	padding: 0 10%;
 }
 
-.banner::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: inherit;
-	z-index: -1;
-}
-
 .banner__title {
 	flex: 2;
 	display: flex;
