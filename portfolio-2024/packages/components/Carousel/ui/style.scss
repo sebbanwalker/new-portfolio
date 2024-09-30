@@ -1,11 +1,27 @@
 @use "@sebban/styles" as *;
 
 .carousel {
-	@include fontCarousel;
+	display: flex;
+	flex-direction: column;
+	max-width: 70vw;
+	margin: 0 auto;
 }
 
 .carousel__title {
+	@include fontCarousel;
+	margin: 20px 0;
+	text-align: left;
 }
 
 .carousel__items {
+	display: flex;
+	justify-content: space-between;
+	gap: 2vw;
+}
+
+.carousel__items img {
+	height: 50px;
+	max-width: 100px;
+	width: auto;
+	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.37));
 }
