@@ -9,10 +9,6 @@ interface TooltipProps {
 export const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
 	const [visible, setVisible] = useState(false);
 
-	const handleMouseEnter = () => setVisible(true);
-
-	const handleMouseLeave = () => setVisible(false);
-
 	return (
 		<section
 			className="tooltip__container"

@@ -54,7 +54,7 @@ $baseFontSizeDynamic: 1vw;
 
 @mixin fontBannerText {
 	font-family: "Roboto Flex", sans-serif;
-	font-size: $baseFontSizeDynamic;
+	font-size: clamp(8px, $baseFontSizeDynamic, 1rem);
 	font-weight: 500;
 	color: $lightgray;
 }

@@ -21,9 +21,10 @@ $gradient-dark: custom-linear-gradient($gradient-2-1, $gradient-2-2);
 .banner__title {
 	flex: 2;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
+	max-width: 65%;
 	padding: 0 10%;
 
 	&--container {
@@ -43,17 +44,21 @@ $gradient-dark: custom-linear-gradient($gradient-2-1, $gradient-2-2);
 
 .banner__text {
 	@include fontBannerText;
+	text-align: left;
+	align-self: flex-start;
+	margin-top: 10px;
+	width: 100%;
+	max-width: 100%;
 }
 
 .banner__links {
 	display: flex;
+	width: 100%;
 	flex-direction: row;
-	justify-content: center;
-	width: auto;
-
-	&--item {
-		padding: 0 5px;
-	}
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 8px;
+	gap: 1vw;
 
 	&--image {
 		display: flex;
