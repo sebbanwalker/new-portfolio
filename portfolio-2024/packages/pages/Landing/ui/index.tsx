@@ -46,18 +46,67 @@ export const LandingPage = () => {
 						url: "https://aws.amazon.com/what-is-aws/",
 					},
 					{
+						image: images.node,
+						name: "Node.js",
+						url: "https://nodejs.org/en",
+					},
+					{
+						image: images.vite,
+						name: "Vite",
+						url: "https://vitejs.dev/",
+					},
+				]}
+			/>
+			<Carousel
+				title="Other Tech"
+				items={[
+					{
+						image: images.bem,
+						name: "BEM Convention",
+						url: "https://getbem.com/",
+					},
+					{
+						image: images.csharp,
+						name: "C#",
+						url: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+					},
+					{
+						image: images.cplus,
+						name: "C++",
+						url: "https://isocpp.org/",
+					},
+					{
+						image: images.docker,
+						name: "Docker",
+						url: "https://www.docker.com/",
+					},
+					{
+						image: images.java,
+						name: "Java",
+						url: "https://dev.java/learn/",
+					},
+					{
+						image: images.nextjs,
+						name: "Next.js",
+						url: "https://nextjs.org/",
+					},
+					{
 						image: images.redux,
 						name: "Redux",
 						url: "https://redux.js.org/",
 					},
 					{
-						image: images.node,
-						name: "Node.js",
-						url: "https://nodejs.org/en",
+						image: images.unity,
+						name: "Unity",
+						url: "https://unity.com/",
+					},
+					{
+						image: images.vercel,
+						name: "Vercel",
+						url: "https://vercel.com/",
 					},
 				]}
 			/>
-			<Carousel title="Other Tech" items={[]} />
 		</section>
 	);
 };
