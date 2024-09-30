@@ -17,11 +17,12 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 2vw;
+	max-width: 100%;
 }
 
 .carousel__items img {
 	height: 50px;
-	max-width: 100px;
 	width: auto;
+	max-width: 100px;
 	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.37));
 }
