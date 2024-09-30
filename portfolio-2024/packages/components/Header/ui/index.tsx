@@ -22,16 +22,22 @@ export const Header = () => {
 					Home
 				</Link>
 				<Link
-					to="/biography"
-					className="header__button"
-					onClick={() => setIsMenuOpen(false)}>
-					Biography
-				</Link>
-				<Link
 					to="/projects"
 					className="header__button"
 					onClick={() => setIsMenuOpen(false)}>
 					Projects
+				</Link>
+				<Link
+					to="/credentials"
+					className="header__button"
+					onClick={() => setIsMenuOpen(false)}>
+					Credentials
+				</Link>
+				<Link
+					to="/biography"
+					className="header__button"
+					onClick={() => setIsMenuOpen(false)}>
+					Biography
 				</Link>
 				<Link
 					to="/contact"
