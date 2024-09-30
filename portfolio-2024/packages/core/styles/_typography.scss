@@ -20,8 +20,8 @@ $baseFontSizeDynamic: 1vw;
 }
 
 @mixin fontHeader {
-	font-family: "Roboto", sans-serif;
-	font-size: $baseFontSize * 2;
+	font-family: "Roboto Flex", sans-serif;
+	font-size: $baseFontSizeDynamic * 1.5;
 	font-weight: 600;
 	color: $azure;
 }
@@ -54,7 +54,14 @@ $baseFontSizeDynamic: 1vw;
 
 @mixin fontBannerText {
 	font-family: "Roboto Flex", sans-serif;
-	font-size: $baseFontSizeDynamic;
+	font-size: clamp(8px, $baseFontSizeDynamic, 1rem);
 	font-weight: 500;
 	color: $lightgray;
+}
+
+@mixin fontTooltip {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: $baseFontSize * 0.75;
+	font-weight: 500;
+	color: $azure;
 }

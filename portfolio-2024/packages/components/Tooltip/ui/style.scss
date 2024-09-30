@@ -7,14 +7,15 @@
 
 .tooltip__text {
 	position: absolute;
-	bottom: 110%;
+	bottom: 115%;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: rgb(18, 18, 18);
+	background-color: rgb(18, 18, 18, 0.9);
 	color: white;
-	padding: 5px 10px;
+	padding: 5px 7px;
 	border-radius: 5px;
 	white-space: nowrap;
 	z-index: 1000;
 	transition: opacity 0.3s ease;
+	@include fontTooltip;
 }

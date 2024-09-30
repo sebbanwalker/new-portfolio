@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { LandingPage } from "@sebban/landingpage";
 import { BiographyPage } from "@sebban/biographypage";
 import { ProjectsPage } from "@sebban/projectspage";
+import { CredentialsPage } from "@sebban/credentialspage";
 import { ContactPage } from "@sebban/contactpage";
 import { Header } from "@sebban/header";
 
@@ -13,6 +14,7 @@ export const AppRouter = () => {
 				<Route path="/" element={<LandingPage />} />
 				<Route path="/biography" element={<BiographyPage />} />
 				<Route path="/projects" element={<ProjectsPage />} />
+				<Route path="/credentials" element={<CredentialsPage />} />
 				<Route path="/contact" element={<ContactPage />} />
 			</Routes>
 		</Router>
