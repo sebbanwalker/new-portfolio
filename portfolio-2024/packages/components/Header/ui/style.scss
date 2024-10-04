@@ -27,6 +27,10 @@
 	@include fontHeader;
 }
 
+.header__button:hover {
+	color: $indigo;
+}
+
 .header__nav {
 	display: flex;
 	gap: 2vw;

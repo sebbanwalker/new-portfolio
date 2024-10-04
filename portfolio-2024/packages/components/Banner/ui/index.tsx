@@ -20,28 +20,40 @@ export const Banner = () => {
 					<section className="banner__links--item">
 						<Tooltip text="GitHub Profile">
 							<a href="https://github.com/sebbanwalker">
-								<img src={github} className="banner__links--image"></img>
+								<img
+									src={github}
+									className="banner__links--image"
+									alt="GitHub"></img>
 							</a>
 						</Tooltip>
 					</section>
 					<section className="banner__links--item">
 						<Tooltip text="LinkedIn Profile">
 							<a href="https://linkedin.com/in/sebbanwalker">
-								<img src={linkedin} className="banner__links--image"></img>
+								<img
+									src={linkedin}
+									className="banner__links--image"
+									alt="LinkedIn"></img>
 							</a>
 						</Tooltip>
 					</section>
 					<section className="banner__links--item">
 						<Tooltip text="LeetCode Profile">
 							<a href="https://leetcode.com/sebbanwalker">
-								<img src={leetcode} className="banner__links--image"></img>
+								<img
+									src={leetcode}
+									className="banner__links--image"
+									alt="LeetCode"></img>
 							</a>
 						</Tooltip>
 					</section>
 				</section>
 			</section>
 			<section className="banner__portrait">
-				<img src={portrait} className="banner__portrait--photo"></img>
+				<img
+					src={portrait}
+					className="banner__portrait--photo"
+					alt="Portrait"></img>
 			</section>
 		</section>
 	);
