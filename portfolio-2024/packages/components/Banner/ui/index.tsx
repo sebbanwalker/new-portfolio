@@ -14,11 +14,11 @@ export const Banner = () => {
 					<h1 className="banner__title--walker">WALKER</h1>
 				</div>
 				<p className="banner__text">
-					Impassioned Frontend Developer based in Stockholm, Sweden.
+					Impassioned Frontend Developer based in Stockholm, Sweden. 📍🇸🇪
 				</p>
 				<section className="banner__links">
 					<section className="banner__links--item">
-						<Tooltip text="GitHub Profile">
+						<Tooltip text="GitHub Profile" theme="light">
 							<a href="https://github.com/sebbanwalker">
 								<img
 									src={github}
@@ -28,7 +28,7 @@ export const Banner = () => {
 						</Tooltip>
 					</section>
 					<section className="banner__links--item">
-						<Tooltip text="LinkedIn Profile">
+						<Tooltip text="LinkedIn Profile" theme="light">
 							<a href="https://linkedin.com/in/sebbanwalker">
 								<img
 									src={linkedin}
@@ -38,7 +38,7 @@ export const Banner = () => {
 						</Tooltip>
 					</section>
 					<section className="banner__links--item">
-						<Tooltip text="LeetCode Profile">
+						<Tooltip text="LeetCode Profile" theme="light">
 							<a href="https://leetcode.com/sebbanwalker">
 								<img
 									src={leetcode}

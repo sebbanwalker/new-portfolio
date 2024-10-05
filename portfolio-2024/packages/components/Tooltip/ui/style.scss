@@ -18,4 +18,16 @@
 	z-index: 1000;
 	transition: opacity 0.3s ease;
 	@include fontTooltip;
+
+	&.dark {
+		background-color: rgb(18, 18, 18, 0.9);
+		color: $azure;
+		text-shadow: 1px 1px 5px #00000061;
+	}
+
+	&.light {
+		background-color: #202427db;
+		color: $azure;
+		text-shadow: 1px 1px 5px #00000061;
+	}
 }
