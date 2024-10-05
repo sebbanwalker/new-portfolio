@@ -1,5 +1,6 @@
 export const images = {
 	aws: "/aws.svg",
+	banner: "/banner.svg",
 	bem: "/bem.svg",
 	csharp: "/csharp.svg",
 	cplus: "/cplus.svg",

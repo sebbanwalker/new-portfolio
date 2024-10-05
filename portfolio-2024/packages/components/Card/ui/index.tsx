@@ -1,6 +1,19 @@
 import React from "react";
 import { images } from "@sebban/images";
 
+interface link {
+	text: string;
+	icon: string;
+}
+[];
+
+interface score {
+	text: string;
+	icon?: string;
+	highlight?: string;
+}
+[];
+
 type cardProps = {
 	image: string;
 	imageAlt: string;
@@ -9,6 +22,9 @@ type cardProps = {
 		icon: string;
 		iconName: string;
 	}[];
+	description: string;
+	score?: score[];
+	link?: link[];
 };
 
 export const Card = (props: cardProps) => {
