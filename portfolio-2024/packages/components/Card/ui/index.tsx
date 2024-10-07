@@ -32,6 +32,7 @@ export const Card = (props: cardProps) => {
 	return (
 		<section className="card">
 			<section className="card__container">
+				<p className="card__title">{props.title}</p>
 				<img src={props.image} alt={props.imageAlt} className="card__image" />
 				{props.icons &&
 					props.icons.map((icon, index: number) => (
