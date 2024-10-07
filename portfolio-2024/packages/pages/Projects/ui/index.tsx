@@ -12,6 +12,20 @@ export const ProjectsPage = () => {
 				description={
 					"An animation project showcasing the principles of animation to augment the user experience. "
 				}
+				icons={[
+					{
+						icon: images.typescript,
+						iconName: "TypeScript",
+					},
+					{
+						icon: images.react,
+						iconName: "React",
+					},
+					{
+						icon: images.sass,
+						iconName: "SASS",
+					},
+				]}
 			/>
 		</section>
 	);

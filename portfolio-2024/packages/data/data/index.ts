@@ -106,16 +106,14 @@ export const lighthouseScore: cardScore = {
 	text: "Lighthouse Score: ",
 };
 
-// TODO: NEEDS URL
 export const visitApp: cardLink = {
 	text: "Visit App",
-	icon: "NEEDS URL",
+	icon: images.popup,
 };
 
-// TODO: NEEDS URL
 export const gitRepo: cardLink = {
 	text: "Visit App",
-	icon: "NEEDS URL",
+	icon: images.popup,
 };
 
 export const projectData: card[] = [
