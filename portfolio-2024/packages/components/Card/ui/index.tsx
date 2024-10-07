@@ -17,9 +17,9 @@ export const Card = (props: card) => {
 					props.score.map((score, index: number) => (
 						<section key={index}>
 							<p className="card__score--text">{score.text}</p>
-							{score.highlight && (
+							{score.score && (
 								<img
-									src={score.highlight}
+									src={score.score}
 									className="card__score--text--highlight"></img>
 							)}
 							{score.icon && (
