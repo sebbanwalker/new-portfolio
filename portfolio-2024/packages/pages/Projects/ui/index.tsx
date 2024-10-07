@@ -1,17 +1,13 @@
 import "./style.scss";
 import { Card } from "@sebban/card";
 import { images } from "@sebban/images";
+import { mysticalMeadows as mm } from "@sebban/data";
 
 export const ProjectsPage = () => {
 	return (
 		<section className="projects">
 			<Card
-				image={images.mysticalmeadows}
-				imageAlt={"Mystical Meadows"}
-				title={"Mystical Meadows"}
-				description={
-					"An animation project showcasing the principles of animation to augment the user experience. "
-				}
+				{...mm}
 				icons={[
 					{
 						icon: images.typescript,

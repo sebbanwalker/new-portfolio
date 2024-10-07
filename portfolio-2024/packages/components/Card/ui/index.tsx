@@ -13,29 +13,44 @@ export const Card = (props: card) => {
 							props.icons.map((icon, index: number) => (
 								<img src={icon.icon} alt={icon.iconName} key={index} />
 							))}
-						{props.score &&
-							props.score.map((score, index: number) => (
-								<section key={index}>
-									<p className="card__score--text">{score.text}</p>
-									{score.score && (
-										<p className="card__score--text--highlight">
-											{score.score}
-										</p>
-									)}
-									{score.icon && (
-										<img className="card__score--img">{score.icon} </img>
-									)}
-								</section>
-							))}
-						{props.link &&
-							props.link.map((link, index: number) => (
-								<section key={index}>
-									{link.text && <p className="card__link--text">{link.text}</p>}
-									{link.icon && (
-										<img src={link.icon} className="card__link--image"></img>
-									)}
-								</section>
-							))}
+						<section className="card__score">
+							{props.score &&
+								props.score.map((score, index: number) => (
+									<section key={index}>
+										<p className="card__score--text">{score.text}</p>
+										{score.score && (
+											<p className="card__score--text--highlight">
+												{score.score}
+											</p>
+										)}
+										{score.icon && (
+											<img
+												className="card__score--img"
+												src={score.icon}
+												//TODO: Find a fix for score icon
+												alt={"Score Icon"}
+											/>
+										)}
+									</section>
+								))}
+						</section>
+						<section className="card__link">
+							{props.link &&
+								props.link.map((link, index: number) => (
+									<section key={index}>
+										{link.text && (
+											<p className="card__link--text">{link.text}</p>
+										)}
+										{link.icon && (
+											<img
+												className="card__link--image"
+												src={link.icon}
+												//TODO: Find a fix for score icon
+												alt="Link Icon"></img>
+										)}
+									</section>
+								))}
+						</section>
 					</section>
 				</section>
 			</section>

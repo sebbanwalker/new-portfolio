@@ -1,6 +1,16 @@
 .card {
-}
+	&__box,
+	&__link,
+	&__score {
+		display: flex;
+	}
 
-.card__box {
-	display: flex;
+	&__box {
+	}
+
+	&__link {
+	}
+
+	&__score {
+	}
 }
