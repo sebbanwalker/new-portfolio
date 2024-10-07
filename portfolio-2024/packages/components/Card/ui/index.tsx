@@ -9,14 +9,21 @@ export const Card = (props: card) => {
 				<section className="card__box">
 					<img src={props.image} alt={props.imageAlt} className="card__image" />
 					<section className="card__info">
-						{props.icons &&
-							props.icons.map((icon, index: number) => (
-								<img src={icon.icon} alt={icon.iconName} key={index} />
-							))}
+						<section className="card__icons">
+							{props.icons &&
+								props.icons.map((icon, index: number) => (
+									<img
+										src={icon.icon}
+										alt={icon.iconName}
+										key={index}
+										className="card__icons--icon"
+									/>
+								))}
+						</section>
 						<section className="card__score">
 							{props.score &&
 								props.score.map((score, index: number) => (
-									<section key={index}>
+									<section key={index} className="card__score--container">
 										<p className="card__score--text">{score.text}</p>
 										{score.score && (
 											<p className="card__score--text--highlight">

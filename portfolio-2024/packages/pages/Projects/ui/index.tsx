@@ -2,6 +2,7 @@ import "./style.scss";
 import { Card } from "@sebban/card";
 import { images } from "@sebban/images";
 import { mysticalMeadows as mm } from "@sebban/data";
+import { Tooltip } from "@sebban/tooltip";
 
 export const ProjectsPage = () => {
 	return (

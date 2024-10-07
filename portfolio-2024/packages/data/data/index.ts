@@ -112,7 +112,7 @@ export const visitApp: cardLink = {
 };
 
 export const gitRepo: cardLink = {
-	text: "Visit App",
+	text: "GitHub Repo",
 	icon: images.popup,
 };
 
