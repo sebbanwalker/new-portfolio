@@ -18,9 +18,7 @@ export const Card = (props: card) => {
 						<section key={index}>
 							<p className="card__score--text">{score.text}</p>
 							{score.score && (
-								<img
-									src={score.score}
-									className="card__score--text--highlight"></img>
+								<p className="card__score--text--highlight">{score.score}</p>
 							)}
 							{score.icon && (
 								<img className="card__score--img">{score.icon} </img>
