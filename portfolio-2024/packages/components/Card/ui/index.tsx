@@ -1,5 +1,3 @@
-import React from "react";
-import { images } from "@sebban/images";
 import "./style.scss";
 import { card } from "@sebban/types";
 

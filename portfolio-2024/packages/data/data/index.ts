@@ -112,6 +112,7 @@ export const visitApp: cardLink = {
 	icon: "NEEDS URL",
 };
 
+// TODO: NEEDS URL
 export const gitRepo: cardLink = {
 	text: "Visit App",
 	icon: "NEEDS URL",

@@ -1,6 +1,18 @@
 import "./style.scss";
-import { card } from "@sebban/types";
+import { Card } from "@sebban/card";
+import { images } from "@sebban/images";
 
-export const ProjectsPage = (props: card) => {
-	return <div>index</div>;
+export const ProjectsPage = () => {
+	return (
+		<section className="projects">
+			<Card
+				image={images.mysticalmeadows}
+				imageAlt={"Mystical Meadows"}
+				title={"Mystical Meadows"}
+				description={
+					"An animation project showcasing the principles of animation to augment the user experience. "
+				}
+			/>
+		</section>
+	);
 };
