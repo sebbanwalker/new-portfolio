@@ -106,48 +106,45 @@ export const lighthouseScore: cardScore = {
 	text: "Lighthouse Score: ",
 };
 
-// TODO: NEEDS URL
 export const visitApp: cardLink = {
 	text: "Visit App",
-	icon: "NEEDS URL",
+	icon: images.popup,
 };
 
 export const gitRepo: cardLink = {
-	text: "Visit App",
-	icon: "NEEDS URL",
+	text: "GitHub Repo",
+	icon: images.popup,
 };
 
-export const projectData: card[] = [
-	{
-		image: images.aws,
-		imageAlt: "Mystical Meadows",
-		title: "Mystical Meadows",
-		icons: [
-			{
-				icon: images.react,
-				iconName: "React",
-			},
-		],
-		description:
-			"An animation project showcasing the principles of animation to augment the user experience. ",
-		score: [
-			{
-				...w3cValidation,
-			},
-			{
-				...lighthouseScore,
-				score: "100",
-			},
-		],
-		link: [
-			{
-				...visitApp,
-				url: "https://mystical-meadows-react.netlify.app/",
-			},
-			{
-				...gitRepo,
-				url: "https://github.com/sebbanwalker/mystical-meadows-react",
-			},
-		],
-	},
-];
+export const mysticalMeadows: card = {
+	image: images.mysticalmeadows,
+	imageAlt: "Mystical Meadows",
+	title: "Mystical Meadows",
+	icons: [
+		{
+			icon: images.react,
+			iconName: "React",
+		},
+	],
+	description:
+		"An animation project showcasing the principles of animation to augment the user experience. ",
+	score: [
+		{
+			...w3cValidation,
+		},
+		{
+			...lighthouseScore,
+			score: "100",
+		},
+	],
+	link: [
+		{
+			...visitApp,
+			url: "https://mystical-meadows-react.netlify.app/",
+		},
+		{
+			...gitRepo,
+			url: "https://github.com/sebbanwalker/mystical-meadows-react",
+		},
+	],
+};
