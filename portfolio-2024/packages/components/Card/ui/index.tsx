@@ -1,34 +1,9 @@
 import React from "react";
 import { images } from "@sebban/images";
 import "./style.scss";
+import { card } from "@sebban/types";
 
-interface link {
-	text: string;
-	icon: string;
-}
-[];
-
-interface score {
-	text: string;
-	icon?: string;
-	highlight?: string;
-}
-[];
-
-type cardProps = {
-	image: string;
-	imageAlt: string;
-	title: string;
-	icons?: {
-		icon: string;
-		iconName: string;
-	}[];
-	description: string;
-	score?: score[];
-	link?: link[];
-};
-
-export const Card = (props: cardProps) => {
+export const Card = (props: card) => {
 	return (
 		<section className="card">
 			<section className="card__container">

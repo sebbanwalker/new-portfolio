@@ -1,7 +1,6 @@
 import "./style.scss";
+import { card } from "@sebban/types";
 
-type Props = {};
-
-export const ProjectsPage = (props: Props) => {
+export const ProjectsPage = (props: card) => {
 	return <div>index</div>;
 };
