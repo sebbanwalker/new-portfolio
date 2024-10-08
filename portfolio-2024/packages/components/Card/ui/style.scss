@@ -10,13 +10,15 @@
 		display: flex;
 	}
 
-	&__image,
-	&__info {
-		width: 50%;
+	&__box {
+		margin: 0 auto;
 	}
 
 	&__info {
 		flex-direction: column;
+		width: 50%;
+		margin: auto;
+		gap: 1rem;
 	}
 
 	&__box {
@@ -32,26 +34,56 @@
 			max-width: 100px;
 			filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.37));
 		}
+
+		&--icon:hover {
+			cursor: pointer;
+		}
 	}
 
 	&__link {
 		margin: 0 auto;
 		flex-direction: row;
+		gap: 1rem;
+
+		&--container {
+			display: flex;
+			white-space: nowrap;
+			gap: 2px;
+		}
+
+		&--container:hover {
+			cursor: pointer;
+		}
+
+		&--image {
+			height: 10px;
+			margin: auto;
+		}
 	}
 
 	&__score {
 		margin: 0 auto;
+		gap: 1vw;
 
 		&--container {
 			display: flex;
 			flex-direction: row;
+			gap: 3%;
+		}
+
+		&--text {
+			white-space: nowrap;
+		}
+
+		&--image {
+			object-fit: contain;
 		}
 	}
 
 	&__image {
-		max-width: 100%;
 		height: auto;
 		aspect-ratio: auto;
 		border-radius: 20px;
+		width: 50%;
 	}
 }
