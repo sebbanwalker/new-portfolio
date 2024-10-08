@@ -10,13 +10,15 @@
 		display: flex;
 	}
 
-	&__image,
-	&__info {
-		width: 50%;
+	&__box {
+		margin: 0 auto;
 	}
 
 	&__info {
 		flex-direction: column;
+		width: 50%;
+		margin: auto;
+		gap: 1rem;
 	}
 
 	&__box {
@@ -59,9 +61,9 @@
 	}
 
 	&__image {
-		max-width: 100%;
 		height: auto;
 		aspect-ratio: auto;
 		border-radius: 20px;
+		width: 50%;
 	}
 }
