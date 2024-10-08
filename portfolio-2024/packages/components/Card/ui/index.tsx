@@ -15,10 +15,10 @@ export const Card = (props: card) => {
 	return (
 		<section className="card">
 			<section className="card__container">
-				<p className="card__title">{props.title}</p>
 				<section className="card__box">
 					<img src={props.image} alt={props.imageAlt} className="card__image" />
 					<section className="card__info">
+						<p className="card__title">{props.title}</p>
 						<section className="card__icons">
 							{props.icons &&
 								props.icons.map((icon, index: number) => (
@@ -55,7 +55,10 @@ export const Card = (props: card) => {
 						<section className="card__link">
 							{props.link &&
 								props.link.map((link, index: number) => (
-									<section key={index}>
+									<a
+										key={index}
+										className="card__link--container"
+										href={link.url}>
 										{link.text && (
 											<p className="card__link--text">{link.text}</p>
 										)}
@@ -66,7 +69,7 @@ export const Card = (props: card) => {
 												//TODO: Find a fix for score icon
 												alt="Link Icon"></img>
 										)}
-									</section>
+									</a>
 								))}
 						</section>
 					</section>
