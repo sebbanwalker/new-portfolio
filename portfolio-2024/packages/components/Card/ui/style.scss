@@ -41,10 +41,20 @@
 
 	&__score {
 		margin: 0 auto;
+		gap: 1vw;
 
 		&--container {
 			display: flex;
 			flex-direction: row;
+			gap: 3%;
+		}
+
+		&--text {
+			white-space: nowrap;
+		}
+
+		&--image {
+			object-fit: contain;
 		}
 	}
 

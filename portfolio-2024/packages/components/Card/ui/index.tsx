@@ -2,6 +2,16 @@ import "./style.scss";
 import { card } from "@sebban/types";
 
 export const Card = (props: card) => {
+	const getHighlightColor = (score: string): string => {
+		const numericScore = parseFloat(score);
+		if (isNaN(numericScore)) return "white";
+		if (numericScore >= 0 && numericScore < 25) return "red";
+		if (numericScore >= 25 && numericScore < 50) return "orange";
+		if (numericScore >= 50 && numericScore < 75) return "yellow";
+		if (numericScore >= 75 && numericScore <= 100) return "green";
+		return "white";
+	};
+
 	return (
 		<section className="card">
 			<section className="card__container">
@@ -25,8 +35,10 @@ export const Card = (props: card) => {
 								props.score.map((score, index: number) => (
 									<section key={index} className="card__score--container">
 										<p className="card__score--text">{score.text}</p>
-										{score.score && (
-											<p className="card__score--text--highlight">
+										{score.score !== undefined && (
+											<p
+												className="card__score--text--highlight"
+												style={{ color: getHighlightColor(score.score) }}>
 												{score.score}
 											</p>
 										)}
@@ -34,7 +46,6 @@ export const Card = (props: card) => {
 											<img
 												className="card__score--img"
 												src={score.icon}
-												//TODO: Find a fix for score icon
 												alt={"Score Icon"}
 											/>
 										)}

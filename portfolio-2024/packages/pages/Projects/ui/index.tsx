@@ -6,24 +6,26 @@ import { Tooltip } from "@sebban/tooltip";
 
 export const ProjectsPage = () => {
 	return (
-		<section className="projects">
-			<Card
-				{...mm}
-				icons={[
-					{
-						icon: images.typescript,
-						iconName: "TypeScript",
-					},
-					{
-						icon: images.react,
-						iconName: "React",
-					},
-					{
-						icon: images.sass,
-						iconName: "SASS",
-					},
-				]}
-			/>
+		<section className="project-page">
+			<section className="projects">
+				<Card
+					{...mm}
+					icons={[
+						{
+							icon: images.typescript,
+							iconName: "TypeScript",
+						},
+						{
+							icon: images.react,
+							iconName: "React",
+						},
+						{
+							icon: images.sass,
+							iconName: "SASS",
+						},
+					]}
+				/>
+			</section>
 		</section>
 	);
 };

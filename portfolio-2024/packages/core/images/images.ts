@@ -18,7 +18,7 @@ export const images = {
 	nextjs: "/nextjs.svg",
 	node: "/node.svg",
 	popup: "/popup.svg",
-	potrait: "/portrait.png",
+	portrait: "/portrait.png",
 	python: "/python.svg",
 	react: "/react.svg",
 	redux: "/redux.svg",
