@@ -8,7 +8,7 @@ $gradient-dark: custom-linear-gradient($gradient-2-1, $gradient-2-2);
 .banner {
 	width: 100%;
 	height: 30vw;
-	background: #11151b;
+	background: $gradient-dark;
 	overflow: hidden;
 	position: relative;
 	overflow: hidden;
