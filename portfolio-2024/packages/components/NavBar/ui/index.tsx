@@ -1,11 +1,18 @@
-import React from "react";
+import "./style.scss";
 
-type navItem = {
-	text: string;
+type navbar = {
+	categories: string[];
 };
 
-interface navbar {}
-
 export const NavBar = (props: navbar) => {
-	return <section className="navbar"></section>;
+	return (
+		<section className="navbar">
+			{props &&
+				props.categories.map((category, index: number) => (
+					<h1 key={index} className="navbar__category">
+						{category}
+					</h1>
+				))}
+		</section>
+	);
 };

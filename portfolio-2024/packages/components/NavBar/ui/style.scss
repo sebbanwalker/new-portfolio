@@ -1,0 +1,14 @@
+@use "@sebban/styles" as *;
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	justify-content: center;
+	padding-top: 10vh;
+	gap: 1rem;
+
+	&__category {
+		@include fontNav;
+	}
+}

@@ -72,3 +72,10 @@ $baseFontSizeDynamic: 1vw;
 	font-weight: 500;
 	color: $azure;
 }
+
+@mixin fontNav {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: $baseFontSizeDynamic * 1.5;
+	font-weight: 500;
+	color: $azure;
+}

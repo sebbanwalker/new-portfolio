@@ -1,4 +1,4 @@
 {
 	"name": "@sebban/types",
-	"main": "./index.ts"
+	"main": "./types.ts"
 }
