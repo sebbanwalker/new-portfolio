@@ -1,17 +1,23 @@
 import "./style.scss";
+import { Link } from "react-router-dom";
 
-type navbar = {
-	categories: string[];
+type item = {
+	categories: link[];
 };
 
-export const NavBar = (props: navbar) => {
+type link = {
+	category: string;
+	link: string;
+};
+
+export const NavBar = (props: item) => {
 	return (
 		<section className="navbar">
 			{props &&
-				props.categories.map((category, index: number) => (
-					<h1 key={index} className="navbar__category">
-						{category}
-					</h1>
+				props.categories.map((item, index: number) => (
+					<Link key={index} className="navbar__category" to={item.link}>
+						{item.category}
+					</Link>
 				))}
 		</section>
 	);
