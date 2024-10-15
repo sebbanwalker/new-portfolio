@@ -137,6 +137,10 @@ export const mysticalMeadows: card = {
 			icon: images.sass,
 			iconName: "SASS",
 		},
+		{
+			icon: images.framermotion,
+			iconName: "Framer Motion",
+		},
 	],
 	description:
 		"An animation project showcasing the principles of animation to augment the user experience. ",
