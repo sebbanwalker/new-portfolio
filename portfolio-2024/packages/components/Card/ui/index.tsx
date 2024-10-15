@@ -30,6 +30,7 @@ export const Card = (props: card) => {
 									/>
 								))}
 						</section>
+						<section className="card__description">{props.description}</section>
 						<section className="card__score">
 							{props.score &&
 								props.score.map((score, index: number) => (

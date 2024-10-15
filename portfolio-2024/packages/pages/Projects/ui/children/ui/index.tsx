@@ -1,5 +1,8 @@
+import { Card } from "@sebban/card";
+import { mysticalMeadows as mm } from "@sebban/data";
+
 export const Websites = () => {
-	return <div>websites</div>;
+	return <Card {...mm} />;
 };
 export const Specialized = () => {
 	return <div>specialized</div>;
