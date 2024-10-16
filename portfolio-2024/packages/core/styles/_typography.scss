@@ -14,6 +14,11 @@ $baseFontSizeDynamic: 1vw;
 	font-size: $baseFontSize * 1.5;
 }
 
+@mixin fontSizeMedium {
+	font-family: "Roboto", sans-serif;
+	font-size: $baseFontSize * 1.75;
+}
+
 @mixin fontSizeLarge {
 	font-family: "Roboto", sans-serif;
 	font-size: $baseFontSize * 2;
