@@ -1,11 +1,24 @@
-import React from "react";
+import "./style.scss";
+import { Link } from "react-router-dom";
 
-type navItem = {
-	text: string;
+type item = {
+	categories: link[];
 };
 
-interface navbar {}
+type link = {
+	category: string;
+	link: string;
+};
 
-export const NavBar = (props: navbar) => {
-	return <section className="navbar"></section>;
+export const NavBar = (props: item) => {
+	return (
+		<section className="navbar">
+			{props &&
+				props.categories.map((item, index: number) => (
+					<Link key={index} className="navbar__category" to={item.link}>
+						{item.category}
+					</Link>
+				))}
+		</section>
+	);
 };

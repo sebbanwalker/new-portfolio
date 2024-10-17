@@ -14,6 +14,11 @@ $baseFontSizeDynamic: 1vw;
 	font-size: $baseFontSize * 1.5;
 }
 
+@mixin fontSizeMedium {
+	font-family: "Roboto", sans-serif;
+	font-size: $baseFontSize * 1.75;
+}
+
 @mixin fontSizeLarge {
 	font-family: "Roboto", sans-serif;
 	font-size: $baseFontSize * 2;
@@ -69,6 +74,13 @@ $baseFontSizeDynamic: 1vw;
 @mixin fontCarousel {
 	font-family: "Roboto Flex", sans-serif;
 	font-size: $baseFontSizeDynamic * 1;
+	font-weight: 500;
+	color: $azure;
+}
+
+@mixin fontNav {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: $baseFontSizeDynamic * 1.5;
 	font-weight: 500;
 	color: $azure;
 }

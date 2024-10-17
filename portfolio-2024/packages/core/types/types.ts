@@ -1,24 +1,24 @@
-export interface carousel {
+export type carousel = {
 	image: string;
 	name: string;
 	url?: string;
-}
+};
 
-export interface cardLink {
+export type cardLink = {
 	text: string;
 	icon: string;
 	url?: string;
-}
+};
 [];
 
-export interface cardScore {
+export type cardScore = {
 	text: string;
 	icon?: string;
 	score?: string;
-}
+};
 [];
 
-export interface card {
+export type card = {
 	image: string;
 	imageAlt: string;
 	title: string;
@@ -29,4 +29,4 @@ export interface card {
 	description: string;
 	score?: cardScore[];
 	link?: cardLink[];
-}
+};

@@ -1,3 +1,5 @@
+@use "@sebban/styles" as *;
+
 .card {
 	&__container {
 		max-width: 100%;
@@ -22,6 +24,8 @@
 	}
 
 	&__box {
+		display: flex;
+		gap: 16px;
 	}
 
 	&__icons {
@@ -41,13 +45,16 @@
 	}
 
 	&__link {
-		margin: 0 auto;
 		flex-direction: row;
+		justify-content: center;
 		gap: 1rem;
+		width: 100%;
 
 		&--container {
 			display: flex;
 			white-space: nowrap;
+			justify-content: center;
+			width: 100%;
 			gap: 2px;
 		}
 
@@ -57,18 +64,19 @@
 
 		&--image {
 			height: 10px;
-			margin: auto;
+			margin: auto 0;
 		}
 	}
 
 	&__score {
-		margin: 0 auto;
-		gap: 1vw;
+		justify-content: center;
 
 		&--container {
 			display: flex;
 			flex-direction: row;
+			justify-content: center;
 			gap: 3%;
+			width: 100%;
 		}
 
 		&--text {
@@ -77,6 +85,7 @@
 
 		&--image {
 			object-fit: contain;
+			flex-grow: 0;
 		}
 	}
 
@@ -85,5 +94,6 @@
 		aspect-ratio: auto;
 		border-radius: 20px;
 		width: 50%;
+		@include imageShadow;
 	}
 }

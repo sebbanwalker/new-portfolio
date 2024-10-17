@@ -1,5 +1,6 @@
 import "./style.scss";
 import { card } from "@sebban/types";
+import { Tooltip } from "@sebban/tooltip";
 
 export const Card = (props: card) => {
 	const getHighlightColor = (score: string): string => {
@@ -22,14 +23,17 @@ export const Card = (props: card) => {
 						<section className="card__icons">
 							{props.icons &&
 								props.icons.map((icon, index: number) => (
-									<img
-										src={icon.icon}
-										alt={icon.iconName}
-										key={index}
-										className="card__icons--icon"
-									/>
+									<Tooltip text={icon.iconName} theme={"dark"}>
+										<img
+											src={icon.icon}
+											alt={icon.iconName}
+											key={index}
+											className="card__icons--icon"
+										/>
+									</Tooltip>
 								))}
 						</section>
+						<section className="card__description">{props.description}</section>
 						<section className="card__score">
 							{props.score &&
 								props.score.map((score, index: number) => (

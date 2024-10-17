@@ -1,6 +1,8 @@
 import { images } from "@sebban/images";
 import { card, carousel, cardScore, cardLink } from "@sebban/types";
 
+//Carousels
+
 export const mainStackData: carousel[] = [
 	{
 		image: images.figma,
@@ -97,6 +99,8 @@ export const otherTechData: carousel[] = [
 	},
 ];
 
+//Card
+
 export const w3cValidation: cardScore = {
 	text: "W3C Validation",
 	icon: images.w3c,
@@ -122,8 +126,20 @@ export const mysticalMeadows: card = {
 	title: "Mystical Meadows",
 	icons: [
 		{
+			icon: images.javascript,
+			iconName: "JavaScript",
+		},
+		{
 			icon: images.react,
 			iconName: "React",
+		},
+		{
+			icon: images.sass,
+			iconName: "SASS",
+		},
+		{
+			icon: images.framermotion,
+			iconName: "Framer Motion",
 		},
 	],
 	description:
